@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Boca Cheia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>🍕 Pizzaria Boca Cheia 🍕</h1>
+        <p>😉 Pizzas que dão Água na Boca 😉</p>
+        <div class="cart-icon" id="cart-icon">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <aside class="sidebar">
+                <h3>Filtrar por Categoria</h3>
+
+                <select id="category-filter">
+                    <option value="">Todas as categorias</option>
+                    <option value="pizza tradicional">Pizza Tradicional</option>
+                    <option value="Pizza Doce">Pizza Doce</option>
+                    <option value="Pizza Vegetariana">Pizza Vegetariana</option>
+
+                </select>
+
+                <h3>Buscar por Ingrediente</h3>
+                <input type="text" id="ingredient-search" placeholder="Ex: mussarela, tomate...">
+
+                <div>
+                    <input type="checkbox" id="search-by-name-only">
+                    <label for="search-by-name-only">Buscar somente por nome</label>
+                </div>
+                <img src="pizzaiolo.JPG" alt="Pizza deliciosa" class="sidebar-image">
+
+            </aside>
+            <section class="menu">
+                <h2>Nosso Cardápio</h2>
+                <div id="pizza-list" class="pizza-grid">
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+
+    <div class="cart-container" id="cart-container">
+        <div class="cart-header">
+            <h3>🛒 Seu Carrinho</h3>
+            <span class="close-cart" id="close-cart">&times;</span>
+        </div>
+        <div class="cart-items" id="cart-items">
+
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Total:</strong> <span id="cart-total">R$ 0,00</span>
+            </div>
+            <button class="checkout-btn" id="checkout-btn">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Pizzaria Boca Cheia. Todos os direitos reservados para o Guilherme.</p>
+    </footer>
+
+    <script src="pizza.js"></script>
+</body>
+
+</html>
